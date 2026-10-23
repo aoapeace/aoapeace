@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f7f1ea 0%, #e9f3f7 100%);
+  color: #1d2433;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.02rem;
+}
+
+.page-shell {
+  width: min(900px, 90%);
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.topbar {
+  background: #2f6f8f;
+  color: #f8fbff;
+  padding: 28px 30px;
+  border: 4px solid #f4a261;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(21, 46, 61, 0.15);
+}
+
+.topbar h1 {
+  margin: 0 0 8px;
+  font-size: 2.5rem;
+}
+
+.topbar p {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border: 2px solid #d9dfe8;
+  border-radius: 12px;
+}
+
+.intro,
+.panel,
+.feature-card {
+  border-radius: 12px;
+}
+
+.intro {
+  background: #fffaf6;
+  border: 3px solid #e76f51;
+  padding: 24px 26px;
+  margin-bottom: 22px;
+}
+
+.intro h2,
+.feature-card h3,
+.panel h3 {
+  margin-top: 0;
+  color: #1d2433;
+}
+
+.feature-card {
+  background: #edf7fb;
+  border: 3px solid #2f6f8f;
+  padding: 24px 26px;
+  margin: 18px 0;
+}
+
+#highlight-card {
+  background: #fff1dc;
+  border: 3px dashed #e76f51;
+  padding: 26px 28px;
+  margin: 18px 0 26px;
+}
+
+.feature-card ul {
+  margin: 12px 0 0;
+  padding-left: 24px;
+}
+
+.panel {
+  background: #fdfdfd;
+  border: 3px solid #f4a261;
+  padding: 22px 24px;
+  margin-top: 16px;
+}
