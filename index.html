@@ -3,45 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 1</title>
+    <title>North Star Studio</title>
+    <meta
+      name="description"
+      content="A responsive milestone portfolio landing page styled with a warm color palette and strong layout structure."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
-      <header class="topbar">
-        <h1>Homework 1</h1>
-        <p>Creative HTML + CSS Layout</p>
+      <header class="site-header">
+        <div class="brand-wrap">
+          <p class="eyebrow">Creative Studio</p>
+          <h1>North Star</h1>
+        </div>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <main class="content">
-        <section class="intro">
-          <h2>Welcome to My Page</h2>
-          <p>
-            This page demonstrates intentional styling with a light, modern color palette,
-            deliberate spacing, and multiple CSS selector types.
-          </p>
+      <main class="page-content">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Milestone 1 update</p>
+            <h2>Thoughtful design that feels effortless on every screen.</h2>
+            <p>
+              We blend clear storytelling, concise strategy, and user-centered layouts
+              to create memorable digital experiences for brands and creative teams.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View work</a>
+              <a class="button secondary" href="#contact">Start a project</a>
+            </div>
+          </div>
+
+          <div class="hero-panel" id="spotlight">
+            <div class="mini-card">
+              <span>Featured Focus</span>
+              <strong>Responsive web systems</strong>
+            </div>
+            <div class="mini-details">
+              <p>Design systems built to be flexible, clear, and easy to scale.</p>
+            </div>
+          </div>
         </section>
 
-        <article id="highlight-card" class="feature-card">
-          <h3>Design Highlights</h3>
-          <p>
-            I used a blue-and-orange palette to create contrast while keeping the design calm and readable.
-          </p>
-          <ul>
-            <li>Type selectors for text styling</li>
-            <li>Class selectors for reusable sections</li>
-            <li>ID selectors for a focal callout</li>
-          </ul>
-        </article>
+        <section class="metrics-grid" aria-label="Studio metrics">
+          <article class="metric">
+            <span class="metric-number">01</span>
+            <h3>Responsive</h3>
+            <p>Layouts adapt smoothly from mobile devices to large desktop screens.</p>
+          </article>
 
-        <section class="panel">
-          <h3>Box Model Example</h3>
-          <p>
-            Each card uses margin, padding, and borders to create a clear relationship between content and spacing.
-            The combination of those properties helps the layout feel structured instead of default browser output.
-          </p>
+          <article class="metric">
+            <span class="metric-number">02</span>
+            <h3>Organized</h3>
+            <p>Each section follows a system of rhythm, spacing, and visual hierarchy.</p>
+          </article>
+
+          <article class="metric">
+            <span class="metric-number">03</span>
+            <h3>Purposeful</h3>
+            <p>Color, typography, and structure work together to support clarity.</p>
+          </article>
+        </section>
+
+        <section class="feature-layout" id="about">
+          <div class="feature-copy">
+            <p class="eyebrow">Our approach</p>
+            <h2>Clear communication is the foundation of every strong digital experience.</h2>
+            <p>
+              Good design is not just about decoration. It is about guiding attention,
+              making content easier to scan, and helping users feel confident while they
+              explore a site.
+            </p>
+            <p>
+              This milestone focuses on the essentials: a refined palette, intentional
+              spacing, strong content hierarchy, and reliable responsiveness across common
+              breakpoints.
+            </p>
+          </div>
+
+          <aside class="feature-quote">
+            <p>
+              “A well-structured layout should feel calm, direct, and easy to navigate at
+              any size.”
+            </p>
+          </aside>
+        </section>
+
+        <section class="project-grid" id="projects">
+          <article class="project-card">
+            <p class="eyebrow">Strategy</p>
+            <h3>Brand storytelling</h3>
+            <p>We align visual direction with business goals and audience needs.</p>
+          </article>
+
+          <article class="project-card accent-card">
+            <p class="eyebrow">Design</p>
+            <h3>Multi-device layouts</h3>
+            <p>Pages retain clarity and balance while scaling down to small screens.</p>
+          </article>
+
+          <article class="project-card">
+            <p class="eyebrow">Delivery</p>
+            <h3>Clean implementation</h3>
+            <p>Modern HTML and CSS structure make content easier to maintain and extend.</p>
+          </article>
+        </section>
+
+        <section class="contact-banner" id="contact">
+          <div>
+            <p class="eyebrow">Let’s build</p>
+            <h2>Need a polished web presence that feels right at every size?</h2>
+          </div>
+          <a class="button primary" href="mailto:hello@northstarstudio.example">hello@northstarstudio.example</a>
         </section>
       </main>
+
+      <footer class="site-footer">
+        <p>North Star Studio © 2026</p>
+      </footer>
     </div>
   </body>
 </html>
