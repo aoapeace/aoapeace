@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact North Star Studio to discuss web design, brand storytelling, and accessible digital experiences."
+    />
+    <title>North Star Studio | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap">
+          <p class="eyebrow">Creative Studio</p>
+          <a href="index.html" class="brand-link" aria-label="North Star home page">
+            <h1>North Star</h1>
+          </a>
+        </div>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-content">
+        <section class="page-intro contact-intro" aria-labelledby="contact-title">
+          <p class="eyebrow">About & contact</p>
+          <h2 id="contact-title">Let’s shape something clear, useful, and memorable.</h2>
+          <p>
+            We partner with founders, creative teams, and organizations that want a stronger digital presence with a more intentional user experience.
+          </p>
+        </section>
+
+        <section class="contact-layout" aria-label="Contact form and details">
+          <div class="contact-details">
+            <h3>Why work with us?</h3>
+            <ul class="check-list">
+              <li>Accessible experiences that work across devices and assistive tech</li>
+              <li>Clear, strategic messaging that supports user trust</li>
+              <li>Beautiful, consistent design systems that are easy to maintain</li>
+            </ul>
+            <p class="contact-email-label">Email</p>
+            <a class="contact-email" href="mailto:hello@northstarstudio.example">hello@northstarstudio.example</a>
+          </div>
+
+          <div class="contact-card">
+            <h3>Send a message</h3>
+            <form class="contact-form" novalidate>
+              <fieldset class="contact-fieldset">
+                <legend>Tell us about your project</legend>
+
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error" />
+                  <p id="name-error" class="error-message" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error" />
+                  <p id="email-error" class="error-message" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="project-type">Project type</label>
+                  <select id="project-type" name="project-type" aria-describedby="project-type-error">
+                    <option value="">Select an option</option>
+                    <option value="branding">Branding</option>
+                    <option value="website">Website design</option>
+                    <option value="strategy">Strategy and messaging</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <p id="project-type-error" class="error-message" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="message">Project details</label>
+                  <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                  <p id="message-error" class="error-message" aria-live="polite"></p>
+                </div>
+              </fieldset>
+
+              <div class="form-actions">
+                <button type="submit" class="button primary">Send inquiry</button>
+              </div>
+
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>North Star Studio © 2026</p>
+      </footer>
+    </div>
+  </body>
+</html>

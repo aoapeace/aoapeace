@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>North Star Studio</title>
     <meta
       name="description"
-      content="A responsive milestone portfolio landing page styled with a warm color palette and strong layout structure."
+      content="North Star Studio creates thoughtful, user-friendly digital experiences with strong visual storytelling and responsive design."
     />
+    <title>North Star Studio | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,39 +17,43 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <div class="page-shell">
       <header class="site-header">
         <div class="brand-wrap">
           <p class="eyebrow">Creative Studio</p>
-          <h1>North Star</h1>
+          <a href="index.html" class="brand-link" aria-label="North Star home page">
+            <h1>North Star</h1>
+          </a>
         </div>
 
         <nav class="site-nav" aria-label="Main navigation">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-      <main class="page-content">
-        <section class="hero">
+      <main id="main-content" class="page-content">
+        <section class="hero" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <p class="eyebrow">Milestone 1 update</p>
-            <h2>Thoughtful design that feels effortless on every screen.</h2>
+            <p class="eyebrow">Milestone 3 update</p>
+            <h2 id="hero-title">Thoughtful design that feels effortless on every screen.</h2>
             <p>
-              We blend clear storytelling, concise strategy, and user-centered layouts
-              to create memorable digital experiences for brands and creative teams.
+              We blend clear storytelling, concise strategy, and user-centered layouts to
+              create memorable digital experiences for brands and creative teams.
             </p>
 
             <div class="hero-actions">
               <a class="button primary" href="#projects">View work</a>
-              <a class="button secondary" href="#contact">Start a project</a>
+              <a class="button secondary" href="contact.html">Start a project</a>
             </div>
           </div>
 
-          <div class="hero-panel" id="spotlight">
+          <div class="hero-panel" id="spotlight" aria-label="Featured project summary">
             <div class="mini-card">
               <span>Featured Focus</span>
               <strong>Responsive web systems</strong>
@@ -80,10 +84,10 @@
           </article>
         </section>
 
-        <section class="feature-layout" id="about">
+        <section class="feature-layout" id="about" aria-labelledby="about-title">
           <div class="feature-copy">
             <p class="eyebrow">Our approach</p>
-            <h2>Clear communication is the foundation of every strong digital experience.</h2>
+            <h2 id="about-title">Clear communication is the foundation of every strong digital experience.</h2>
             <p>
               Good design is not just about decoration. It is about guiding attention,
               making content easier to scan, and helping users feel confident while they
@@ -96,7 +100,7 @@
             </p>
           </div>
 
-          <aside class="feature-quote">
+          <aside class="feature-quote" aria-label="Design quote">
             <p>
               “A well-structured layout should feel calm, direct, and easy to navigate at
               any size.”
@@ -104,7 +108,9 @@
           </aside>
         </section>
 
-        <section class="project-grid" id="projects">
+        <section class="project-grid" id="projects" aria-labelledby="projects-title">
+          <h2 id="projects-title" class="sr-only">Featured projects</h2>
+
           <article class="project-card">
             <p class="eyebrow">Strategy</p>
             <h3>Brand storytelling</h3>
@@ -124,12 +130,12 @@
           </article>
         </section>
 
-        <section class="contact-banner" id="contact">
+        <section class="contact-banner" id="contact" aria-labelledby="contact-title">
           <div>
             <p class="eyebrow">Let’s build</p>
-            <h2>Need a polished web presence that feels right at every size?</h2>
+            <h2 id="contact-title">Need a polished web presence that feels right at every size?</h2>
           </div>
-          <a class="button primary" href="mailto:hello@northstarstudio.example">hello@northstarstudio.example</a>
+          <a class="button primary" href="contact.html">Book a consultation</a>
         </section>
       </main>
 
